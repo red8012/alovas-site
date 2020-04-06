@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ALOVAS - Product</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/gif" href="images/alovas_logo.png" />
+	</head>
+	<body class="is-preload">
+			<div id="page-wrapper">
+				<header id="header">
+					<h1><a href="index.html"><img src="images/alovas_logo_.png" height="45%" width="auto" alt="" class="logo_"/></a></h1>
+					<nav class="links">
+						<a href="team.html">Team</a>
+						<a href="product.html">Product</a>
+						<a href="partnership.html">Partnership</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="http://www.alovas.com/viewer">Try Now</a>
+					</nav>		
+					
+					<nav class="ham">
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="product.html">Product</a></li>
+								<li><a href="partnership.html">Partnership</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+								<li><a href="http://www.alovas.com/viewer">Try Now</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Our Product</h2>
+								<p><i>Our aspiration is to build the best A.I. analysis in pathology.</i></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Our Strategy</h3>
+									<p>Our short term plan is to deliver various set of A.I. modules that allow pathologists to improve their workflow, and thus provide better service, at lower cost. Our long-term plan is to develop prognostic tools that integrate digital pathology with electronic health records, and other clinical data to provide pathologists with layers of information to better optimize patient's diagnosis.</p>
+
+									<p>Liver histopathology image analysis is a commonly used approach to confirm the decision in liver disease diagnosis. Current assistive histopathology image analysis systems have their function limitations in extracting morphology features, effective discrimination of cancer and normal tissues. Furthermore, some disease types of cells have highly varied features and ambiguous boundary. Some region segmentations such as the portal area segemention, also need to refer to surrounding cells. All of these characteristics make the analysis of liver histopathology images very challenging. In view of these limitations, we aims to develop new deep learning modules, combined with image analysis, for the analysis of liver histopathology images, the detection of liver cancers, and the grading of inflammation degrees. The results will be realized into a practical system for doctors to test and provide feedback, for achieving precision medicine.</p>
+									<a name="cross-platform"></a>
+									<p><br></p>
+									<h3 class="major">Cross-platform Giga-pixel Viewer</h3>
+									<p>We had build a cross-platform Giga-pixel viewer with cloud-architecture and to deliver an open workflow for pathologists. In current scenario, pathologists are limited to use the scanner and software provided by the vendor to digitize slides and analyze them. ALOVAS tackles the bindings and provides multiple A.I. algorithms to help pathologists contribute reports. The results are masked on the WSI digital slide and can be un-shown.</p>
+
+									<p>ALOVAS provides Real-Time magnification up to 40X and support 4 tabs at a time for multi-tasking, e.g. comparing different slides on a patient. Touch as input is supported, ALOVAS is supporting touch device such as Ipad and apple pencil. With supporting apple pencil, pathologists can use it as input to label and mark annotations smooth and natural.</p>
+									<section class="features">
+										<article>
+											<a name="tumor"></a>
+											<a href="#cross-platform" class="image"><img src="images/mac.jpg" alt="" /></a>
+											<h3 class="major">PC/Mac</h3>
+											<p>Common tools for pathologists.</p>
+											
+										</article>
+										<article>
+											<a name="tumor"></a>
+											<a href="#cross-platform" class="image"><img src="images/ipad.jpg" alt="" /></a>
+											<h3 class="major">Ipad</h3>
+											<p>Support for apple pencil as input.</p>
+											
+										</article>
+									</section>
+									<a name="algo"></a>
+									<p><br></p>
+									<h3 class="major">A.I. Algorithms</h3>
+									<!-- <p>The A.I. Pathology Platform simultaneously refers to cell level features and tissue structure to provide detection of liver diseases such as hepatitis, fatty liver and tumor. The integrated algorithms aid doctors in quickly identifying problems of the patients, reducing the effort of diagnosis and the bias from subjected judgement. Our platform provides high resolution live image viewer with automated workflow. Annotations and structural reports can also be made directly on the platfrom, accelerating diagnosis on liver pathology images.</p> -->
+
+									<section class="features">
+										<article>
+											<a name="tumor"></a>
+											<a href="#tumor" class="image"><img src="images/tumor.jpg" alt="" /></a>
+											<h3 class="major">Tumor Detection and Grading</h3>
+											<p>A multi-cscale convolutional neural network is utilized for patch-wise recognition of liver tumor with a detection performance of 95% mIOU. After the tumor is identified, the area is fed into another classifier for grading liver tissue as one of four different tumor grades. It combines a traditional image-processing based extractor retrieving sinusoid, cell and trabecular features as well as an CNN based extractor retrieving tissue features to achieve 89% grading accuracy.</p>
+											
+										</article>
+										<article>
+											<a name="lympho"></a>
+											<a href="#lympho" class="image"><img src="images/lym.jpg" alt="" /></a>
+											<h3 class="major">Lymphocyte Detection</h3>
+											<p>Lymphocyters with different degrees of inflammation have different appearances, and they can be easily misjudged as epithelial cells and kuffer cells. A convolution layer of step-size 2 is proposed replace max-pooling to avoid feature loss in a U-net. The resulting U-net is used for automatic lymphocyte detection. </p>
+											
+										</article>
+										<article>
+											<a name="portal"></a>
+											<a href="#portal" class="image"><img src="images/portal.jpg" alt="" /></a>
+											<h3 class="major">Portal Segmentation</h3>
+											<p>Segmenting portal areas can support hepatitis grading, as they are important regions to observe. An algorithm incorporating state-of-art CNN with multi-scale reference to liver portal is proposed to identify portal areas of various sizes and shapes.</p>
+											
+										</article>
+										<article>
+											<a name="ishak"></a>
+											<a href="#ishak" class="image"><img src="images/ishak.jpg" alt="" /></a>
+											<h3 class="major">Hepatitis Staging</h3>
+											<p>A framework is proposed to automate the calculation of Ishak Score for quantifying the degree of liver fibrosis. Ambiguous descriptions from human judgement can be therefore avoided in hepatitis diagnosis.</p>
+											
+										</article>
+										<article>
+											<a name="nucleus"></a>
+											<a href="#nucleus" class="image"><img src="images/nucleus.jpg" alt="" /></a>
+											<h3 class="major">Nucleus Segmentation</h3>
+											<p>An algorithm is designed to provide quick nucleus segmentation with CNNs in given regions. The result then can be used to calculate medical parameters such as average size, density, standard deviation and N/C ratio of nuclei for analysis and diagnosis.</p>
+											
+										</article>
+										<article>
+											<a name="regis"></a>
+											<a href="#regis" class="image"><img src="images/res.jpg" alt="" /></a>
+											<h3 class="major">Image Registration</h3>
+											<p>When one wants to observe various properties of the same region in multi-stained slides, an image registration process is required. The reason is that the slides are actually different slices so the cells' distributions are different. Additionally, the stained slides may suffer rotation and translation when scanned. An algorithm is proposed to find the best transformation parameters to align one slide with another.</p>
+											
+										</article>
+										
+									</section>
+
+								</div>
+							</div>
+							<section id="footer">
+								<div class="inner">
+									<ul class="copyright">
+										<li>&copy; ALOVAS @ 2020 All rights reserved.</li>
+									</ul>
+								</div>
+							</section>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
