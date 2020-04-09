@@ -3176,8 +3176,7 @@ input, select, textarea {
 						
 					}
 					#header nav.ham {
-						opacity: 0;
-						visibility: hidden;
+						display: none;
 					}
 					
 
@@ -3213,12 +3212,10 @@ input, select, textarea {
 								background-color: inherit;
 							}
 				#header nav.links {
-					opacity: 0;
 					visibility: hidden;
 				}
 				#header nav.ham {
-					opacity: 100%;
-					visibility: visible;
+					display: inline-block;
 				}
 
 		}
@@ -3243,12 +3240,10 @@ input, select, textarea {
 					padding-right: 1.25em;
 				}
 				#header nav.links {
-					opacity: 0;
 					visibility: hidden;
 				}
 				#header nav.ham {
-					opacity: 100%;
-					visibility: visible;
+					display: inline-block;
 				}
 
 		}
